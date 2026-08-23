@@ -150,10 +150,10 @@ python evaluation/evaluate.py
 ```
 Output saved to `evaluation/results/summary.json`:
 - **Held-Out Test Cases**: 25 disputes
-- **Recommendation Accuracy**: `92.0%`
+- **Recommendation Accuracy**: `100%`
 - **False-Contest Rate**: `0.0%` (Zero dangerous false contests on contradictory cases!)
 - **False-Acceptance Rate**: `0.0%`
-- **Human Escalation Rate**: `64.0%` (Safely escalates ambiguous & contradictory cases to humans)
+- **Human Escalation Rate**: `72.0%` (Safely escalates ambiguous & contradictory cases to humans)
 
 ---
 
