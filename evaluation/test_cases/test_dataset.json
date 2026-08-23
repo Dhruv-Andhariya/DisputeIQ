@@ -1,0 +1,3111 @@
+[
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-101",
+      "payment_id": "PAY-EVAL-101",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-10 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-10 12:00:00",
+      "updated_at": "2026-08-10 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-101",
+      "order_id": "ORD-EVAL-101",
+      "customer_id": "CUST-EVAL-101",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-01 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-101",
+      "customer_id": "CUST-EVAL-101",
+      "items": [
+        {
+          "item_id": "ITM-101",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "harini.dutta@evaltest.com",
+      "customer_name": "Harini Dutta",
+      "created_at": "2026-08-01 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-101",
+      "order_id": "ORD-EVAL-101",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000101",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-05",
+      "actual_delivery_date": "2026-08-05 16:00:00",
+      "recipient_name": "Harini Dutta",
+      "signed_by": "Harini Dutta",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-02 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-101-INV",
+        "dispute_id": "DSP-EVAL-101",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-101.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-101",
+          "order_id": "ORD-EVAL-101",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-01 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-101-ORD",
+        "dispute_id": "DSP-EVAL-101",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-101.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-101",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-01 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-101-POD",
+        "dispute_id": "DSP-EVAL-101",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-101.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-101",
+          "order_id": "ORD-EVAL-101",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000101",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-05",
+          "actual_delivery_date": "2026-08-05 16:00:00",
+          "recipient_name": "Harini Dutta",
+          "signed_by": "Harini Dutta",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-02 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-02 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-101-COMM",
+        "dispute_id": "DSP-EVAL-101",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-101.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-101",
+          "messages": [
+            {
+              "timestamp": "2026-08-04 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-101 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-04 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-102",
+      "payment_id": "PAY-EVAL-102",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-11 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-11 12:00:00",
+      "updated_at": "2026-08-11 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-102",
+      "order_id": "ORD-EVAL-102",
+      "customer_id": "CUST-EVAL-102",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-02 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-102",
+      "customer_id": "CUST-EVAL-102",
+      "items": [
+        {
+          "item_id": "ITM-102",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "farhan.joshi@evaltest.com",
+      "customer_name": "Farhan Joshi",
+      "created_at": "2026-08-02 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-102",
+      "order_id": "ORD-EVAL-102",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000102",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-06",
+      "actual_delivery_date": "2026-08-06 16:00:00",
+      "recipient_name": "Farhan Joshi",
+      "signed_by": "Farhan Joshi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-03 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-102-INV",
+        "dispute_id": "DSP-EVAL-102",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-102.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-102",
+          "order_id": "ORD-EVAL-102",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-02 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-102-ORD",
+        "dispute_id": "DSP-EVAL-102",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-102.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-102",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-02 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-102-POD",
+        "dispute_id": "DSP-EVAL-102",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-102.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-102",
+          "order_id": "ORD-EVAL-102",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000102",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-06",
+          "actual_delivery_date": "2026-08-06 16:00:00",
+          "recipient_name": "Farhan Joshi",
+          "signed_by": "Farhan Joshi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-03 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-03 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-102-COMM",
+        "dispute_id": "DSP-EVAL-102",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-102.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-102",
+          "messages": [
+            {
+              "timestamp": "2026-08-05 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-102 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-05 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-103",
+      "payment_id": "PAY-EVAL-103",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-12 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-12 12:00:00",
+      "updated_at": "2026-08-12 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-103",
+      "order_id": "ORD-EVAL-103",
+      "customer_id": "CUST-EVAL-103",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-03 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-103",
+      "customer_id": "CUST-EVAL-103",
+      "items": [
+        {
+          "item_id": "ITM-103",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "chirag.sinha@evaltest.com",
+      "customer_name": "Chirag Sinha",
+      "created_at": "2026-08-03 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-103",
+      "order_id": "ORD-EVAL-103",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000103",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-07",
+      "actual_delivery_date": "2026-08-07 16:00:00",
+      "recipient_name": "Chirag Sinha",
+      "signed_by": "Chirag Sinha",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-04 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-103-INV",
+        "dispute_id": "DSP-EVAL-103",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-103.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-103",
+          "order_id": "ORD-EVAL-103",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-03 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-103-ORD",
+        "dispute_id": "DSP-EVAL-103",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-103.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-103",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-03 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-103-POD",
+        "dispute_id": "DSP-EVAL-103",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-103.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-103",
+          "order_id": "ORD-EVAL-103",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000103",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-07",
+          "actual_delivery_date": "2026-08-07 16:00:00",
+          "recipient_name": "Chirag Sinha",
+          "signed_by": "Chirag Sinha",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-04 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-04 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-103-COMM",
+        "dispute_id": "DSP-EVAL-103",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-103.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-103",
+          "messages": [
+            {
+              "timestamp": "2026-08-06 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-103 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-06 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-104",
+      "payment_id": "PAY-EVAL-104",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-13 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-13 12:00:00",
+      "updated_at": "2026-08-13 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-104",
+      "order_id": "ORD-EVAL-104",
+      "customer_id": "CUST-EVAL-104",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-04 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-104",
+      "customer_id": "CUST-EVAL-104",
+      "items": [
+        {
+          "item_id": "ITM-104",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "esha.roy@evaltest.com",
+      "customer_name": "Esha Roy",
+      "created_at": "2026-08-04 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-104",
+      "order_id": "ORD-EVAL-104",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000104",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-08",
+      "actual_delivery_date": "2026-08-08 16:00:00",
+      "recipient_name": "Esha Roy",
+      "signed_by": "Esha Roy",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-05 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-104-INV",
+        "dispute_id": "DSP-EVAL-104",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-104.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-104",
+          "order_id": "ORD-EVAL-104",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-04 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-104-ORD",
+        "dispute_id": "DSP-EVAL-104",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-104.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-104",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-04 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-104-POD",
+        "dispute_id": "DSP-EVAL-104",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-104.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-104",
+          "order_id": "ORD-EVAL-104",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000104",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-08",
+          "actual_delivery_date": "2026-08-08 16:00:00",
+          "recipient_name": "Esha Roy",
+          "signed_by": "Esha Roy",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-05 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-05 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-104-COMM",
+        "dispute_id": "DSP-EVAL-104",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-104.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-104",
+          "messages": [
+            {
+              "timestamp": "2026-08-07 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-104 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-07 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-105",
+      "payment_id": "PAY-EVAL-105",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-14 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-14 12:00:00",
+      "updated_at": "2026-08-14 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-105",
+      "order_id": "ORD-EVAL-105",
+      "customer_id": "CUST-EVAL-105",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-05 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-105",
+      "customer_id": "CUST-EVAL-105",
+      "items": [
+        {
+          "item_id": "ITM-105",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "gaurav.joshi@evaltest.com",
+      "customer_name": "Gaurav Joshi",
+      "created_at": "2026-08-05 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-105",
+      "order_id": "ORD-EVAL-105",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000105",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-09",
+      "actual_delivery_date": "2026-08-09 16:00:00",
+      "recipient_name": "Gaurav Joshi",
+      "signed_by": "Gaurav Joshi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-06 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-105-INV",
+        "dispute_id": "DSP-EVAL-105",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-105.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-105",
+          "order_id": "ORD-EVAL-105",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-05 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-105-ORD",
+        "dispute_id": "DSP-EVAL-105",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-105.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-105",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-05 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-105-POD",
+        "dispute_id": "DSP-EVAL-105",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-105.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-105",
+          "order_id": "ORD-EVAL-105",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000105",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-09",
+          "actual_delivery_date": "2026-08-09 16:00:00",
+          "recipient_name": "Gaurav Joshi",
+          "signed_by": "Gaurav Joshi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-06 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-06 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-105-COMM",
+        "dispute_id": "DSP-EVAL-105",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-105.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-105",
+          "messages": [
+            {
+              "timestamp": "2026-08-08 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-105 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-08 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-106",
+      "payment_id": "PAY-EVAL-106",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 4999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-15 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-15 12:00:00",
+      "updated_at": "2026-08-15 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-106",
+      "order_id": "ORD-EVAL-106",
+      "customer_id": "CUST-EVAL-106",
+      "amount": 4999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-06 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-106",
+      "customer_id": "CUST-EVAL-106",
+      "items": [
+        {
+          "item_id": "ITM-106",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 4999.0
+        }
+      ],
+      "total_amount": 4999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "anish.trivedi@evaltest.com",
+      "customer_name": "Anish Trivedi",
+      "created_at": "2026-08-06 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-106",
+      "order_id": "ORD-EVAL-106",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000106",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-10",
+      "actual_delivery_date": "2026-08-10 16:00:00",
+      "recipient_name": "Anish Trivedi",
+      "signed_by": "Anish Trivedi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-07 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-106-INV",
+        "dispute_id": "DSP-EVAL-106",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-106.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-106",
+          "order_id": "ORD-EVAL-106",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-06 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-106-ORD",
+        "dispute_id": "DSP-EVAL-106",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-106.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-106",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-06 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-106-POD",
+        "dispute_id": "DSP-EVAL-106",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-106.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-106",
+          "order_id": "ORD-EVAL-106",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000106",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-10",
+          "actual_delivery_date": "2026-08-10 16:00:00",
+          "recipient_name": "Anish Trivedi",
+          "signed_by": "Anish Trivedi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-07 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-07 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-106-COMM",
+        "dispute_id": "DSP-EVAL-106",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-106.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-106",
+          "messages": [
+            {
+              "timestamp": "2026-08-09 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-106 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-09 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-107",
+      "payment_id": "PAY-EVAL-107",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-16 12:00:00",
+      "case_type": "STRONG_CASE",
+      "created_at": "2026-08-16 12:00:00",
+      "updated_at": "2026-08-16 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-107",
+      "order_id": "ORD-EVAL-107",
+      "customer_id": "CUST-EVAL-107",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-07 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-107",
+      "customer_id": "CUST-EVAL-107",
+      "items": [
+        {
+          "item_id": "ITM-107",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "chirag.saxena@evaltest.com",
+      "customer_name": "Chirag Saxena",
+      "created_at": "2026-08-07 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-107",
+      "order_id": "ORD-EVAL-107",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000107",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-11",
+      "actual_delivery_date": "2026-08-11 16:00:00",
+      "recipient_name": "Chirag Saxena",
+      "signed_by": "Chirag Saxena",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-08 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-107-INV",
+        "dispute_id": "DSP-EVAL-107",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-107.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-107",
+          "order_id": "ORD-EVAL-107",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-07 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-107-ORD",
+        "dispute_id": "DSP-EVAL-107",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-107.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-107",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-07 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-107-POD",
+        "dispute_id": "DSP-EVAL-107",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-107.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-107",
+          "order_id": "ORD-EVAL-107",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000107",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-11",
+          "actual_delivery_date": "2026-08-11 16:00:00",
+          "recipient_name": "Chirag Saxena",
+          "signed_by": "Chirag Saxena",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-08 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-08 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-107-COMM",
+        "dispute_id": "DSP-EVAL-107",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-107.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-107",
+          "messages": [
+            {
+              "timestamp": "2026-08-10 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Thank you, order ORD-EVAL-107 received in perfect condition."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-10 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-108",
+      "payment_id": "PAY-EVAL-108",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-17 12:00:00",
+      "case_type": "WEAK_CASE",
+      "created_at": "2026-08-17 12:00:00",
+      "updated_at": "2026-08-17 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-108",
+      "order_id": "ORD-EVAL-108",
+      "customer_id": "CUST-EVAL-108",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-08 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-108",
+      "customer_id": "CUST-EVAL-108",
+      "items": [
+        {
+          "item_id": "ITM-108",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "bhavna.dutta@evaltest.com",
+      "customer_name": "Bhavna Dutta",
+      "created_at": "2026-08-08 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-108",
+      "order_id": "ORD-EVAL-108",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000108",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-12",
+      "actual_delivery_date": "2026-08-12 16:00:00",
+      "recipient_name": "Bhavna Dutta",
+      "signed_by": "Front Desk Guard",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-09 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-108-INV",
+        "dispute_id": "DSP-EVAL-108",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-108.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-108",
+          "order_id": "ORD-EVAL-108",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-08 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-108-ORD",
+        "dispute_id": "DSP-EVAL-108",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-108.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-108",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-08 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-108-POD",
+        "dispute_id": "DSP-EVAL-108",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-108.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-108",
+          "order_id": "ORD-EVAL-108",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000108",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-12",
+          "actual_delivery_date": "2026-08-12 16:00:00",
+          "recipient_name": "Bhavna Dutta",
+          "signed_by": "Front Desk Guard",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-09 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-09 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-108-COMM",
+        "dispute_id": "DSP-EVAL-108",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-108.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-108",
+          "messages": [
+            {
+              "timestamp": "2026-08-11 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "I cannot locate my package for order ORD-EVAL-108. Security guard says he doesn't remember signing."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-11 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-109",
+      "payment_id": "PAY-EVAL-109",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 4999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-18 12:00:00",
+      "case_type": "WEAK_CASE",
+      "created_at": "2026-08-18 12:00:00",
+      "updated_at": "2026-08-18 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-109",
+      "order_id": "ORD-EVAL-109",
+      "customer_id": "CUST-EVAL-109",
+      "amount": 4999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-09 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-109",
+      "customer_id": "CUST-EVAL-109",
+      "items": [
+        {
+          "item_id": "ITM-109",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 4999.0
+        }
+      ],
+      "total_amount": 4999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "chirag.dutta@evaltest.com",
+      "customer_name": "Chirag Dutta",
+      "created_at": "2026-08-09 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-109",
+      "order_id": "ORD-EVAL-109",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000109",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-13",
+      "actual_delivery_date": "2026-08-13 16:00:00",
+      "recipient_name": "Chirag Dutta",
+      "signed_by": "Front Desk Guard",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-10 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-109-INV",
+        "dispute_id": "DSP-EVAL-109",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-109.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-109",
+          "order_id": "ORD-EVAL-109",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-09 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-109-ORD",
+        "dispute_id": "DSP-EVAL-109",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-109.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-109",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-09 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-109-POD",
+        "dispute_id": "DSP-EVAL-109",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-109.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-109",
+          "order_id": "ORD-EVAL-109",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000109",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-13",
+          "actual_delivery_date": "2026-08-13 16:00:00",
+          "recipient_name": "Chirag Dutta",
+          "signed_by": "Front Desk Guard",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-10 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-10 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-109-COMM",
+        "dispute_id": "DSP-EVAL-109",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-109.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-109",
+          "messages": [
+            {
+              "timestamp": "2026-08-12 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "I cannot locate my package for order ORD-EVAL-109. Security guard says he doesn't remember signing."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-12 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-110",
+      "payment_id": "PAY-EVAL-110",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 7999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-19 12:00:00",
+      "case_type": "WEAK_CASE",
+      "created_at": "2026-08-19 12:00:00",
+      "updated_at": "2026-08-19 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-110",
+      "order_id": "ORD-EVAL-110",
+      "customer_id": "CUST-EVAL-110",
+      "amount": 7999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-10 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-110",
+      "customer_id": "CUST-EVAL-110",
+      "items": [
+        {
+          "item_id": "ITM-110",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 7999.0
+        }
+      ],
+      "total_amount": 7999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "anish.kapoor@evaltest.com",
+      "customer_name": "Anish Kapoor",
+      "created_at": "2026-08-10 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-110",
+      "order_id": "ORD-EVAL-110",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000110",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-14",
+      "actual_delivery_date": "2026-08-14 16:00:00",
+      "recipient_name": "Anish Kapoor",
+      "signed_by": "Front Desk Guard",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-11 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-110-INV",
+        "dispute_id": "DSP-EVAL-110",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-110.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-110",
+          "order_id": "ORD-EVAL-110",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-10 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-110-ORD",
+        "dispute_id": "DSP-EVAL-110",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-110.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-110",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-10 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-110-POD",
+        "dispute_id": "DSP-EVAL-110",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-110.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-110",
+          "order_id": "ORD-EVAL-110",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000110",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-14",
+          "actual_delivery_date": "2026-08-14 16:00:00",
+          "recipient_name": "Anish Kapoor",
+          "signed_by": "Front Desk Guard",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-11 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-11 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-110-COMM",
+        "dispute_id": "DSP-EVAL-110",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-110.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-110",
+          "messages": [
+            {
+              "timestamp": "2026-08-13 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "I cannot locate my package for order ORD-EVAL-110. Security guard says he doesn't remember signing."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-13 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-111",
+      "payment_id": "PAY-EVAL-111",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-20 12:00:00",
+      "case_type": "WEAK_CASE",
+      "created_at": "2026-08-20 12:00:00",
+      "updated_at": "2026-08-20 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-111",
+      "order_id": "ORD-EVAL-111",
+      "customer_id": "CUST-EVAL-111",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-11 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-111",
+      "customer_id": "CUST-EVAL-111",
+      "items": [
+        {
+          "item_id": "ITM-111",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "bhavna.trivedi@evaltest.com",
+      "customer_name": "Bhavna Trivedi",
+      "created_at": "2026-08-11 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-111",
+      "order_id": "ORD-EVAL-111",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000111",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-15",
+      "actual_delivery_date": "2026-08-15 16:00:00",
+      "recipient_name": "Bhavna Trivedi",
+      "signed_by": "Front Desk Guard",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-12 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-111-INV",
+        "dispute_id": "DSP-EVAL-111",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-111.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-111",
+          "order_id": "ORD-EVAL-111",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-11 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-111-ORD",
+        "dispute_id": "DSP-EVAL-111",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-111.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-111",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-11 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-111-POD",
+        "dispute_id": "DSP-EVAL-111",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-111.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-111",
+          "order_id": "ORD-EVAL-111",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000111",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-15",
+          "actual_delivery_date": "2026-08-15 16:00:00",
+          "recipient_name": "Bhavna Trivedi",
+          "signed_by": "Front Desk Guard",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-12 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-12 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-111-COMM",
+        "dispute_id": "DSP-EVAL-111",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-111.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-111",
+          "messages": [
+            {
+              "timestamp": "2026-08-14 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "I cannot locate my package for order ORD-EVAL-111. Security guard says he doesn't remember signing."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-14 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-112",
+      "payment_id": "PAY-EVAL-112",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 7999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-21 12:00:00",
+      "case_type": "WEAK_CASE",
+      "created_at": "2026-08-21 12:00:00",
+      "updated_at": "2026-08-21 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-112",
+      "order_id": "ORD-EVAL-112",
+      "customer_id": "CUST-EVAL-112",
+      "amount": 7999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-12 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-112",
+      "customer_id": "CUST-EVAL-112",
+      "items": [
+        {
+          "item_id": "ITM-112",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 7999.0
+        }
+      ],
+      "total_amount": 7999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "esha.saxena@evaltest.com",
+      "customer_name": "Esha Saxena",
+      "created_at": "2026-08-12 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-112",
+      "order_id": "ORD-EVAL-112",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000112",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-16",
+      "actual_delivery_date": "2026-08-16 16:00:00",
+      "recipient_name": "Esha Saxena",
+      "signed_by": "Front Desk Guard",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-13 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-112-INV",
+        "dispute_id": "DSP-EVAL-112",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-112.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-112",
+          "order_id": "ORD-EVAL-112",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-12 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-112-ORD",
+        "dispute_id": "DSP-EVAL-112",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-112.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-112",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-12 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-112-POD",
+        "dispute_id": "DSP-EVAL-112",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-112.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-112",
+          "order_id": "ORD-EVAL-112",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000112",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-16",
+          "actual_delivery_date": "2026-08-16 16:00:00",
+          "recipient_name": "Esha Saxena",
+          "signed_by": "Front Desk Guard",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-13 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-13 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-112-COMM",
+        "dispute_id": "DSP-EVAL-112",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-112.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-112",
+          "messages": [
+            {
+              "timestamp": "2026-08-15 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "I cannot locate my package for order ORD-EVAL-112. Security guard says he doesn't remember signing."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-15 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-113",
+      "payment_id": "PAY-EVAL-113",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-15 00:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-15 00:00:00",
+      "updated_at": "2026-08-15 00:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-113",
+      "order_id": "ORD-EVAL-113",
+      "customer_id": "CUST-EVAL-113",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-13 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-113",
+      "customer_id": "CUST-EVAL-113",
+      "items": [
+        {
+          "item_id": "ITM-113",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "chirag.dutta@evaltest.com",
+      "customer_name": "Chirag Dutta",
+      "created_at": "2026-08-13 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-113",
+      "order_id": "ORD-EVAL-113",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000113",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-17",
+      "actual_delivery_date": "2026-08-18 12:00:00",
+      "recipient_name": "Chirag Dutta",
+      "signed_by": "Chirag Dutta",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-14 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-113-INV",
+        "dispute_id": "DSP-EVAL-113",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-113.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-113",
+          "order_id": "ORD-EVAL-113",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-13 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-113-ORD",
+        "dispute_id": "DSP-EVAL-113",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-113.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-113",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-13 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-113-POD",
+        "dispute_id": "DSP-EVAL-113",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-113.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-113",
+          "order_id": "ORD-EVAL-113",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000113",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-17",
+          "actual_delivery_date": "2026-08-18 12:00:00",
+          "recipient_name": "Chirag Dutta",
+          "signed_by": "Chirag Dutta",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-14 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-14 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-113-COMM",
+        "dispute_id": "DSP-EVAL-113",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-113.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-113",
+          "messages": [
+            {
+              "timestamp": "2026-08-16 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputed order ORD-EVAL-113 before delivery arrived."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-16 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-114",
+      "payment_id": "PAY-EVAL-114",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-23 12:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-23 12:00:00",
+      "updated_at": "2026-08-23 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-114",
+      "order_id": "ORD-EVAL-114",
+      "customer_id": "CUST-EVAL-114",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-14 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-114",
+      "customer_id": "CUST-EVAL-114",
+      "items": [
+        {
+          "item_id": "ITM-114",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "gaurav.chawla@evaltest.com",
+      "customer_name": "Gaurav Chawla",
+      "created_at": "2026-08-14 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-114",
+      "order_id": "ORD-EVAL-ERR-114",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000114",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-18",
+      "actual_delivery_date": "2026-08-18 16:00:00",
+      "recipient_name": "Gaurav Chawla",
+      "signed_by": "Gaurav Chawla",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-15 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-114-INV",
+        "dispute_id": "DSP-EVAL-114",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-114.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-114",
+          "order_id": "ORD-EVAL-114",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-14 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-114-ORD",
+        "dispute_id": "DSP-EVAL-114",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-114.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-114",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-14 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-114-POD",
+        "dispute_id": "DSP-EVAL-114",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-114.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-114",
+          "order_id": "ORD-EVAL-ERR-114",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000114",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-18",
+          "actual_delivery_date": "2026-08-18 16:00:00",
+          "recipient_name": "Gaurav Chawla",
+          "signed_by": "Gaurav Chawla",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-15 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-15 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-114-COMM",
+        "dispute_id": "DSP-EVAL-114",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-114.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-114",
+          "messages": [
+            {
+              "timestamp": "2026-08-17 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputing order ORD-EVAL-114 due to order number mismatch on tracking receipt."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-17 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-115",
+      "payment_id": "PAY-EVAL-115",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 3999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-24 12:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-24 12:00:00",
+      "updated_at": "2026-08-24 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-115",
+      "order_id": "ORD-EVAL-115",
+      "customer_id": "CUST-EVAL-115",
+      "amount": 3499.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-15 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-115",
+      "customer_id": "CUST-EVAL-115",
+      "items": [
+        {
+          "item_id": "ITM-115",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 3499.0
+        }
+      ],
+      "total_amount": 3499.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "divya.joshi@evaltest.com",
+      "customer_name": "Divya Joshi",
+      "created_at": "2026-08-15 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-115",
+      "order_id": "ORD-EVAL-115",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000115",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-19",
+      "actual_delivery_date": "2026-08-19 16:00:00",
+      "recipient_name": "Divya Joshi",
+      "signed_by": "Divya Joshi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-16 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-115-INV",
+        "dispute_id": "DSP-EVAL-115",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-115.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-115",
+          "order_id": "ORD-EVAL-115",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-15 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-115-ORD",
+        "dispute_id": "DSP-EVAL-115",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-115.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-115",
+          "amount": 3499.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-15 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-115-POD",
+        "dispute_id": "DSP-EVAL-115",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-115.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-115",
+          "order_id": "ORD-EVAL-115",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000115",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-19",
+          "actual_delivery_date": "2026-08-19 16:00:00",
+          "recipient_name": "Divya Joshi",
+          "signed_by": "Divya Joshi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-16 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-16 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-115-COMM",
+        "dispute_id": "DSP-EVAL-115",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-115.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-115",
+          "messages": [
+            {
+              "timestamp": "2026-08-18 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputing charge for order ORD-EVAL-115 due to price mismatch."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-18 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-116",
+      "payment_id": "PAY-EVAL-116",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-18 00:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-18 00:00:00",
+      "updated_at": "2026-08-18 00:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-116",
+      "order_id": "ORD-EVAL-116",
+      "customer_id": "CUST-EVAL-116",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-16 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-116",
+      "customer_id": "CUST-EVAL-116",
+      "items": [
+        {
+          "item_id": "ITM-116",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "divya.kapoor@evaltest.com",
+      "customer_name": "Divya Kapoor",
+      "created_at": "2026-08-16 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-116",
+      "order_id": "ORD-EVAL-116",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000116",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-20",
+      "actual_delivery_date": "2026-08-21 12:00:00",
+      "recipient_name": "Divya Kapoor",
+      "signed_by": "Divya Kapoor",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-17 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-116-INV",
+        "dispute_id": "DSP-EVAL-116",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-116.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-116",
+          "order_id": "ORD-EVAL-116",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-16 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-116-ORD",
+        "dispute_id": "DSP-EVAL-116",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-116.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-116",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-16 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-116-POD",
+        "dispute_id": "DSP-EVAL-116",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-116.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-116",
+          "order_id": "ORD-EVAL-116",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000116",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-20",
+          "actual_delivery_date": "2026-08-21 12:00:00",
+          "recipient_name": "Divya Kapoor",
+          "signed_by": "Divya Kapoor",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-17 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-17 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-116-COMM",
+        "dispute_id": "DSP-EVAL-116",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-116.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-116",
+          "messages": [
+            {
+              "timestamp": "2026-08-19 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputed order ORD-EVAL-116 before delivery arrived."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-19 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-117",
+      "payment_id": "PAY-EVAL-117",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 4999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-26 12:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-26 12:00:00",
+      "updated_at": "2026-08-26 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-117",
+      "order_id": "ORD-EVAL-117",
+      "customer_id": "CUST-EVAL-117",
+      "amount": 4999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-17 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-117",
+      "customer_id": "CUST-EVAL-117",
+      "items": [
+        {
+          "item_id": "ITM-117",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 4999.0
+        }
+      ],
+      "total_amount": 4999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "chirag.trivedi@evaltest.com",
+      "customer_name": "Chirag Trivedi",
+      "created_at": "2026-08-17 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-117",
+      "order_id": "ORD-EVAL-ERR-117",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000117",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-21",
+      "actual_delivery_date": "2026-08-21 16:00:00",
+      "recipient_name": "Chirag Trivedi",
+      "signed_by": "Chirag Trivedi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-18 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-117-INV",
+        "dispute_id": "DSP-EVAL-117",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-117.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-117",
+          "order_id": "ORD-EVAL-117",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-17 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-117-ORD",
+        "dispute_id": "DSP-EVAL-117",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-117.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-117",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-17 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-117-POD",
+        "dispute_id": "DSP-EVAL-117",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-117.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-117",
+          "order_id": "ORD-EVAL-ERR-117",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000117",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-21",
+          "actual_delivery_date": "2026-08-21 16:00:00",
+          "recipient_name": "Chirag Trivedi",
+          "signed_by": "Chirag Trivedi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-18 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-18 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-117-COMM",
+        "dispute_id": "DSP-EVAL-117",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-117.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-117",
+          "messages": [
+            {
+              "timestamp": "2026-08-20 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputing order ORD-EVAL-117 due to order number mismatch on tracking receipt."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-20 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-118",
+      "payment_id": "PAY-EVAL-118",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 8499.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-27 12:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-27 12:00:00",
+      "updated_at": "2026-08-27 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-118",
+      "order_id": "ORD-EVAL-118",
+      "customer_id": "CUST-EVAL-118",
+      "amount": 7999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-18 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-118",
+      "customer_id": "CUST-EVAL-118",
+      "items": [
+        {
+          "item_id": "ITM-118",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 7999.0
+        }
+      ],
+      "total_amount": 7999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "farhan.dutta@evaltest.com",
+      "customer_name": "Farhan Dutta",
+      "created_at": "2026-08-18 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-118",
+      "order_id": "ORD-EVAL-118",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000118",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-22",
+      "actual_delivery_date": "2026-08-22 16:00:00",
+      "recipient_name": "Farhan Dutta",
+      "signed_by": "Farhan Dutta",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-19 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-118-INV",
+        "dispute_id": "DSP-EVAL-118",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-118.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-118",
+          "order_id": "ORD-EVAL-118",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-18 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-118-ORD",
+        "dispute_id": "DSP-EVAL-118",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-118.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-118",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-18 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-118-POD",
+        "dispute_id": "DSP-EVAL-118",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-118.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-118",
+          "order_id": "ORD-EVAL-118",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000118",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-22",
+          "actual_delivery_date": "2026-08-22 16:00:00",
+          "recipient_name": "Farhan Dutta",
+          "signed_by": "Farhan Dutta",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-19 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-19 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-118-COMM",
+        "dispute_id": "DSP-EVAL-118",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-118.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-118",
+          "messages": [
+            {
+              "timestamp": "2026-08-21 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputing charge for order ORD-EVAL-118 due to price mismatch."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-21 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-119",
+      "payment_id": "PAY-EVAL-119",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-21 00:00:00",
+      "case_type": "CONTRADICTORY_CASE",
+      "created_at": "2026-08-21 00:00:00",
+      "updated_at": "2026-08-21 00:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-119",
+      "order_id": "ORD-EVAL-119",
+      "customer_id": "CUST-EVAL-119",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-19 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-119",
+      "customer_id": "CUST-EVAL-119",
+      "items": [
+        {
+          "item_id": "ITM-119",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "anish.roy@evaltest.com",
+      "customer_name": "Anish Roy",
+      "created_at": "2026-08-19 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-119",
+      "order_id": "ORD-EVAL-119",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000119",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-23",
+      "actual_delivery_date": "2026-08-24 12:00:00",
+      "recipient_name": "Anish Roy",
+      "signed_by": "Anish Roy",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-20 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-119-INV",
+        "dispute_id": "DSP-EVAL-119",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-119.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-119",
+          "order_id": "ORD-EVAL-119",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-19 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-119-ORD",
+        "dispute_id": "DSP-EVAL-119",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-119.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-119",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-19 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-119-POD",
+        "dispute_id": "DSP-EVAL-119",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-119.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-119",
+          "order_id": "ORD-EVAL-119",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000119",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-23",
+          "actual_delivery_date": "2026-08-24 12:00:00",
+          "recipient_name": "Anish Roy",
+          "signed_by": "Anish Roy",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-20 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-20 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-119-COMM",
+        "dispute_id": "DSP-EVAL-119",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-119.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-119",
+          "messages": [
+            {
+              "timestamp": "2026-08-22 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Disputed order ORD-EVAL-119 before delivery arrived."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-22 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-120",
+      "payment_id": "PAY-EVAL-120",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-29 12:00:00",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "created_at": "2026-08-29 12:00:00",
+      "updated_at": "2026-08-29 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-120",
+      "order_id": "ORD-EVAL-120",
+      "customer_id": "CUST-EVAL-120",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-20 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-120",
+      "customer_id": "CUST-EVAL-120",
+      "items": [
+        {
+          "item_id": "ITM-120",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "gaurav.joshi@evaltest.com",
+      "customer_name": "Gaurav Joshi",
+      "created_at": "2026-08-20 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-120",
+      "order_id": "ORD-EVAL-120",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000120",
+      "status": "IN_TRANSIT",
+      "estimated_delivery_date": "2026-08-24",
+      "actual_delivery_date": null,
+      "recipient_name": "Gaurav Joshi",
+      "signed_by": null,
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-21 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-120-INV",
+        "dispute_id": "DSP-EVAL-120",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-120.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-120",
+          "order_id": "ORD-EVAL-120",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-20 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-120-ORD",
+        "dispute_id": "DSP-EVAL-120",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-120.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-120",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-20 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-120-COMM",
+        "dispute_id": "DSP-EVAL-120",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-120.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-120",
+          "messages": [
+            {
+              "timestamp": "2026-08-23 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Package for order ORD-EVAL-120 is stuck in transit."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-23 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-121",
+      "payment_id": "PAY-EVAL-121",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 1999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-30 12:00:00",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "created_at": "2026-08-30 12:00:00",
+      "updated_at": "2026-08-30 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-121",
+      "order_id": "ORD-EVAL-121",
+      "customer_id": "CUST-EVAL-121",
+      "amount": 1999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-21 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-121",
+      "customer_id": "CUST-EVAL-121",
+      "items": [
+        {
+          "item_id": "ITM-121",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 1999.0
+        }
+      ],
+      "total_amount": 1999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "esha.roy@evaltest.com",
+      "customer_name": "Esha Roy",
+      "created_at": "2026-08-21 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-121",
+      "order_id": "ORD-EVAL-121",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000121",
+      "status": "IN_TRANSIT",
+      "estimated_delivery_date": "2026-08-25",
+      "actual_delivery_date": null,
+      "recipient_name": "Esha Roy",
+      "signed_by": null,
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-22 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-121-INV",
+        "dispute_id": "DSP-EVAL-121",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-121.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-121",
+          "order_id": "ORD-EVAL-121",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-21 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-121-ORD",
+        "dispute_id": "DSP-EVAL-121",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-121.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-121",
+          "amount": 1999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-21 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-121-COMM",
+        "dispute_id": "DSP-EVAL-121",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-121.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-121",
+          "messages": [
+            {
+              "timestamp": "2026-08-24 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Package for order ORD-EVAL-121 is stuck in transit."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-24 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-122",
+      "payment_id": "PAY-EVAL-122",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 4999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-08-31 12:00:00",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "created_at": "2026-08-31 12:00:00",
+      "updated_at": "2026-08-31 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-122",
+      "order_id": "ORD-EVAL-122",
+      "customer_id": "CUST-EVAL-122",
+      "amount": 4999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-22 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-122",
+      "customer_id": "CUST-EVAL-122",
+      "items": [
+        {
+          "item_id": "ITM-122",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 4999.0
+        }
+      ],
+      "total_amount": 4999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "harini.kapoor@evaltest.com",
+      "customer_name": "Harini Kapoor",
+      "created_at": "2026-08-22 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-122",
+      "order_id": "ORD-EVAL-122",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000122",
+      "status": "IN_TRANSIT",
+      "estimated_delivery_date": "2026-08-26",
+      "actual_delivery_date": null,
+      "recipient_name": "Harini Kapoor",
+      "signed_by": null,
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-23 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-122-INV",
+        "dispute_id": "DSP-EVAL-122",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-122.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-122",
+          "order_id": "ORD-EVAL-122",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-22 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-122-ORD",
+        "dispute_id": "DSP-EVAL-122",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-122.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-122",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-22 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-122-COMM",
+        "dispute_id": "DSP-EVAL-122",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-122.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-122",
+          "messages": [
+            {
+              "timestamp": "2026-08-25 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "Package for order ORD-EVAL-122 is stuck in transit."
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-25 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-123",
+      "payment_id": "PAY-EVAL-123",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 7999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-09-01 12:00:00",
+      "case_type": "EDGE_CASE",
+      "created_at": "2026-09-01 12:00:00",
+      "updated_at": "2026-09-01 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-123",
+      "order_id": "ORD-EVAL-123",
+      "customer_id": "CUST-EVAL-123",
+      "amount": 7999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-23 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-123",
+      "customer_id": "CUST-EVAL-123",
+      "items": [
+        {
+          "item_id": "ITM-123",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 7999.0
+        }
+      ],
+      "total_amount": 7999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "anish.kapoor@evaltest.com",
+      "customer_name": "Anish Kapoor",
+      "created_at": "2026-08-23 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-123",
+      "order_id": "ORD-EVAL-123",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000123",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-27",
+      "actual_delivery_date": "2026-08-27 16:00:00",
+      "recipient_name": "Anish Kapoor",
+      "signed_by": "Anish Kapoor",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-24 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-123-INV",
+        "dispute_id": "DSP-EVAL-123",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-123.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-123",
+          "order_id": "ORD-EVAL-123",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-23 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-123-ORD",
+        "dispute_id": "DSP-EVAL-123",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-123.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-123",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-23 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-123-POD",
+        "dispute_id": "DSP-EVAL-123",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-123.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-123",
+          "order_id": "ORD-EVAL-123",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000123",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-27",
+          "actual_delivery_date": "2026-08-27 16:00:00",
+          "recipient_name": "Anish Kapoor",
+          "signed_by": "Anish Kapoor",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-24 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-24 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-123-COMM",
+        "dispute_id": "DSP-EVAL-123",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-123.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-123",
+          "messages": [
+            {
+              "timestamp": "2026-08-26 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "The product received for order ORD-EVAL-123 was completely shattered and broken inside the packaging!"
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-26 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-124",
+      "payment_id": "PAY-EVAL-124",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 7999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-09-02 12:00:00",
+      "case_type": "EDGE_CASE",
+      "created_at": "2026-09-02 12:00:00",
+      "updated_at": "2026-09-02 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-124",
+      "order_id": "ORD-EVAL-124",
+      "customer_id": "CUST-EVAL-124",
+      "amount": 7999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-24 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-124",
+      "customer_id": "CUST-EVAL-124",
+      "items": [
+        {
+          "item_id": "ITM-124",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 7999.0
+        }
+      ],
+      "total_amount": 7999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "bhavna.joshi@evaltest.com",
+      "customer_name": "Bhavna Joshi",
+      "created_at": "2026-08-24 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-124",
+      "order_id": "ORD-EVAL-124",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000124",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-28",
+      "actual_delivery_date": "2026-08-28 16:00:00",
+      "recipient_name": "Bhavna Joshi",
+      "signed_by": "Bhavna Joshi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-25 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-124-INV",
+        "dispute_id": "DSP-EVAL-124",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-124.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-124",
+          "order_id": "ORD-EVAL-124",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-24 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-124-ORD",
+        "dispute_id": "DSP-EVAL-124",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-124.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-124",
+          "amount": 7999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-24 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-124-POD",
+        "dispute_id": "DSP-EVAL-124",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-124.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-124",
+          "order_id": "ORD-EVAL-124",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000124",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-28",
+          "actual_delivery_date": "2026-08-28 16:00:00",
+          "recipient_name": "Bhavna Joshi",
+          "signed_by": "Bhavna Joshi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-25 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-25 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-124-COMM",
+        "dispute_id": "DSP-EVAL-124",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-124.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-124",
+          "messages": [
+            {
+              "timestamp": "2026-08-27 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "The product received for order ORD-EVAL-124 was completely shattered and broken inside the packaging!"
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-27 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  },
+  {
+    "dispute": {
+      "dispute_id": "DSP-EVAL-125",
+      "payment_id": "PAY-EVAL-125",
+      "merchant_id": "MERCHANT_EVAL",
+      "amount": 4999.0,
+      "currency": "INR",
+      "reason": "Goods / Services Not Received",
+      "status": "OPEN",
+      "dispute_date": "2026-09-03 12:00:00",
+      "case_type": "EDGE_CASE",
+      "created_at": "2026-09-03 12:00:00",
+      "updated_at": "2026-09-03 12:00:00"
+    },
+    "payment": {
+      "payment_id": "PAY-EVAL-125",
+      "order_id": "ORD-EVAL-125",
+      "customer_id": "CUST-EVAL-125",
+      "amount": 4999.0,
+      "currency": "INR",
+      "status": "captured",
+      "method": "card",
+      "created_at": "2026-08-25 12:15:00"
+    },
+    "order": {
+      "order_id": "ORD-EVAL-125",
+      "customer_id": "CUST-EVAL-125",
+      "items": [
+        {
+          "item_id": "ITM-125",
+          "name": "Tech Gadget",
+          "quantity": 1,
+          "price": 4999.0
+        }
+      ],
+      "total_amount": 4999.0,
+      "currency": "INR",
+      "shipping_address": "Bengaluru, KA",
+      "customer_email": "bhavna.joshi@evaltest.com",
+      "customer_name": "Bhavna Joshi",
+      "created_at": "2026-08-25 12:00:00"
+    },
+    "delivery": {
+      "delivery_id": "DEL-EVAL-125",
+      "order_id": "ORD-EVAL-125",
+      "carrier": "BlueDart",
+      "tracking_number": "BD00000125",
+      "status": "DELIVERED",
+      "estimated_delivery_date": "2026-08-29",
+      "actual_delivery_date": "2026-08-29 16:00:00",
+      "recipient_name": "Bhavna Joshi",
+      "signed_by": "Bhavna Joshi",
+      "delivery_address": "Bengaluru, KA",
+      "created_at": "2026-08-26 12:00:00"
+    },
+    "evidence": [
+      {
+        "evidence_id": "EVD-125-INV",
+        "dispute_id": "DSP-EVAL-125",
+        "category": "INVOICE",
+        "file_name": "invoice_ORD-EVAL-125.json",
+        "file_type": "application/json",
+        "content": {
+          "invoice_number": "INV-125",
+          "order_id": "ORD-EVAL-125",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-25 12:15:00"
+      },
+      {
+        "evidence_id": "EVD-125-ORD",
+        "dispute_id": "DSP-EVAL-125",
+        "category": "ORDER_CONFIRMATION",
+        "file_name": "order_ORD-EVAL-125.json",
+        "file_type": "application/json",
+        "content": {
+          "order_id": "ORD-EVAL-125",
+          "amount": 4999.0
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-25 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-125-POD",
+        "dispute_id": "DSP-EVAL-125",
+        "category": "PROOF_OF_DELIVERY",
+        "file_name": "pod_DEL-EVAL-125.json",
+        "file_type": "application/json",
+        "content": {
+          "delivery_id": "DEL-EVAL-125",
+          "order_id": "ORD-EVAL-125",
+          "carrier": "BlueDart",
+          "tracking_number": "BD00000125",
+          "status": "DELIVERED",
+          "estimated_delivery_date": "2026-08-29",
+          "actual_delivery_date": "2026-08-29 16:00:00",
+          "recipient_name": "Bhavna Joshi",
+          "signed_by": "Bhavna Joshi",
+          "delivery_address": "Bengaluru, KA",
+          "created_at": "2026-08-26 12:00:00"
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-26 12:00:00"
+      },
+      {
+        "evidence_id": "EVD-125-COMM",
+        "dispute_id": "DSP-EVAL-125",
+        "category": "CUSTOMER_COMMUNICATION",
+        "file_name": "chat_CUST-EVAL-125.json",
+        "file_type": "application/json",
+        "content": {
+          "customer_id": "CUST-EVAL-125",
+          "messages": [
+            {
+              "timestamp": "2026-08-28 12:00:00",
+              "sender": "CUSTOMER",
+              "text": "The product received for order ORD-EVAL-125 was completely shattered and broken inside the packaging!"
+            }
+          ]
+        },
+        "verification_status": "FOUND",
+        "created_at": "2026-08-28 12:00:00"
+      }
+    ],
+    "ground_truth_decision": "HUMAN_REVIEW"
+  }
+]

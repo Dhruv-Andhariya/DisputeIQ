@@ -1,0 +1,286 @@
+{
+  "evaluation_timestamp": "2026-08-23 02:52:11",
+  "total_test_cases": 25,
+  "execution_time_seconds": 0.01,
+  "metrics": {
+    "recommendation_accuracy": "100.0%",
+    "false_contest_rate": "0.0%",
+    "false_acceptance_rate": "0.0%",
+    "human_escalation_rate": "72.0%"
+  },
+  "raw_counts": {
+    "correct": 25,
+    "false_contests": 0,
+    "false_acceptances": 0,
+    "escalated_to_human": 18
+  },
+  "confusion_matrix": {
+    "CONTEST": {
+      "CONTEST": 7,
+      "DO_NOT_CONTEST": 0,
+      "HUMAN_REVIEW": 0
+    },
+    "DO_NOT_CONTEST": {
+      "CONTEST": 0,
+      "DO_NOT_CONTEST": 0,
+      "HUMAN_REVIEW": 0
+    },
+    "HUMAN_REVIEW": {
+      "CONTEST": 0,
+      "DO_NOT_CONTEST": 0,
+      "HUMAN_REVIEW": 18
+    }
+  },
+  "case_details": [
+    {
+      "dispute_id": "DSP-EVAL-101",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-102",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-103",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-104",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-105",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-106",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-107",
+      "case_type": "STRONG_CASE",
+      "ground_truth": "CONTEST",
+      "predicted_decision": "CONTEST",
+      "confidence": 0.92,
+      "safety_override_triggered": false,
+      "override_reason": null,
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-108",
+      "case_type": "WEAK_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in signature_authenticity: Weak Signature Proof: Package was signed for by third-party 'Front Desk Guard' rather than direct recipient.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-109",
+      "case_type": "WEAK_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in signature_authenticity: Weak Signature Proof: Package was signed for by third-party 'Front Desk Guard' rather than direct recipient.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-110",
+      "case_type": "WEAK_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in signature_authenticity: Weak Signature Proof: Package was signed for by third-party 'Front Desk Guard' rather than direct recipient.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-111",
+      "case_type": "WEAK_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in signature_authenticity: Weak Signature Proof: Package was signed for by third-party 'Front Desk Guard' rather than direct recipient.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-112",
+      "case_type": "WEAK_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in signature_authenticity: Weak Signature Proof: Package was signed for by third-party 'Front Desk Guard' rather than direct recipient.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-113",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Chronological Anomaly: Actual delivery date (2026-08-18 12:00:00) is after the dispute filing date (2026-08-15 00:00:00).",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-114",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in order_id_consistency: Order Identity Conflict: Payment references 'ORD-EVAL-114', but delivery proof references a different order 'ORD-EVAL-ERR-114'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-115",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in payment_amount_consistency: Dispute amount (\u20b93999.0) does not match captured payment amount (\u20b93499.0).",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-116",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Chronological Anomaly: Actual delivery date (2026-08-21 12:00:00) is after the dispute filing date (2026-08-18 00:00:00).",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-117",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in order_id_consistency: Order Identity Conflict: Payment references 'ORD-EVAL-117', but delivery proof references a different order 'ORD-EVAL-ERR-117'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-118",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in payment_amount_consistency: Dispute amount (\u20b98499.0) does not match captured payment amount (\u20b97999.0).",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-119",
+      "case_type": "CONTRADICTORY_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Chronological Anomaly: Actual delivery date (2026-08-24 12:00:00) is after the dispute filing date (2026-08-21 00:00:00).",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-120",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Delivery is incomplete or in status 'IN_TRANSIT'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-121",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Delivery is incomplete or in status 'IN_TRANSIT'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-122",
+      "case_type": "MISSING_EVIDENCE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.0,
+      "safety_override_triggered": true,
+      "override_reason": "Critical verification failure in delivery_date_validity: Delivery is incomplete or in status 'IN_TRANSIT'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-123",
+      "case_type": "EDGE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in customer_communication_relevance: Dispute Category Conflict: Dispute filed as 'Goods / Services Not Received', but customer chat mentions item was 'broken, shattered'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-124",
+      "case_type": "EDGE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in customer_communication_relevance: Dispute Category Conflict: Dispute filed as 'Goods / Services Not Received', but customer chat mentions item was 'broken, shattered'.",
+      "matches_ground_truth": true
+    },
+    {
+      "dispute_id": "DSP-EVAL-125",
+      "case_type": "EDGE_CASE",
+      "ground_truth": "HUMAN_REVIEW",
+      "predicted_decision": "HUMAN_REVIEW",
+      "confidence": 0.65,
+      "safety_override_triggered": true,
+      "override_reason": "Verification warning in customer_communication_relevance: Dispute Category Conflict: Dispute filed as 'Goods / Services Not Received', but customer chat mentions item was 'broken, shattered'.",
+      "matches_ground_truth": true
+    }
+  ]
+}
